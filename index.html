@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">         
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="theme">
+     
+    </nav>
+
+<div class="container">
+    <div class="header">
+        <h1 id="first-line">Generate a</h1>
+        <h1 id="second-line">random password</h1>
+        <p id="third-line">Never use an insecure password again</p>
+    </div>
+
+    <div class="costumization">
+        <h2>Costumize your password</h2>
+
+        <div class="length">
+            <input type="number" id="length" min="8" max="15" value="8">
+            <label for="length" >Length</label>
+        </div>
+
+        <div class="uppercase">
+            <input type="checkbox" id="uppercase" class="larger">
+            <label for="uppercase" class="label-style">Uppercase</label>
+        </div>
+
+        <div class="lowercase">
+            <input type="checkbox" id="lowercase" class="larger">
+            <label for="lowercase" class="label-style">Lowercase</label>
+        </div>
+
+        <div class="numbers">
+            <input type="checkbox" id="numbers" class="larger">
+            <label for="numbers" class="label-style">Numbers</label>
+        </div>
+
+        <div class="symbols">
+            <input type="checkbox" id="symbols" class="larger">
+            <label for="symbols" class="label-style">Symbols</label>
+        </div>
+
+    </div>
+
+    <div class="genrated-password">
+        <button id="generate">Generate Passwords</button>
+    </div>
+
+    <div class="passwords hide">
+        <div class="password">
+            <h3 id="password1"></h3>
+        </div>
+        <div class="password">
+            <h3 id="password2"></h3>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
