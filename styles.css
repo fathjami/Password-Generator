@@ -114,7 +114,7 @@ body.dark{
 
 
 .header{
-    width: 80vw;
+    width: 100%;
     height: 10vh;
     display: flex;
     justify-content: center;
